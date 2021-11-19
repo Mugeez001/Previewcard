@@ -1,0 +1,125 @@
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+   background-color: hsl(0, 0%, 95%);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+  
+}
+
+.flex-container{
+    display: flex;
+    max-width: 860px;
+    min-height: 60vh;
+    
+}
+
+div.orange-sedan{
+    background-color: hsl(31, 77%, 52%);
+    padding: 35px;
+    border-radius: 10px 0 0 10px;
+    
+}
+
+div.dark-cyan{
+    background-color: hsl(184, 100%, 22%);
+    padding: 35px;
+}
+
+div.verydark-cyan{
+    background-color: hsl(179, 100%, 13%);
+    padding: 35px;
+    border-radius:  0 10px 10px 0;
+}
+
+h1{
+    color: hsl(0, 0%, 95%);
+    font-weight: 700;
+    font-family: Big Shoulders Display, sans-serif;
+    text-transform: uppercase;
+}
+
+
+button.learn-more{
+    position: relative;
+    top: 40px;
+    border-style: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: bold;
+    font-family: Lexend Deca;
+    background-color: hsl(0, 0%, 95%);
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 200ms ease-in-out;
+    
+}
+
+.learn-more.is-featured{
+ color: hsl(179, 100%, 13%);
+}
+
+.learn-more.dark-cyan{
+   color: hsl(184, 100%, 22%);
+}
+
+.learn-more.orange-sedan{
+    color: hsl(31, 77%, 52%);
+}
+
+.five-lines{
+    line-height: 2;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.learn-more.is-featured:hover{
+    background-color:hsl(184, 72%, 24%);
+    
+}
+
+.learn-more.dark-cyan:hover{
+    background-color:hsl(179, 100%, 13%);
+    
+}
+
+.learn-more.orange-sedan:hover{
+    background-color:hsl(32, 71%, 33%); 
+   
+}
+
+@media  (max-width: 750px){
+    .flex-container{
+       padding: 70px;
+       flex-direction: column;
+       margin: 10px 10px;
+       padding-bottom:5em;
+    }
+
+    div.orange-sedan{
+        border-radius:10px 10px 0 0;
+    }
+
+    div.verydark-cyan{
+        border-radius: 0 0 10px 10px;
+    }
+
+    button.learn-more{
+        position: relative;
+        top: 15px;
+        padding: 15px 20px;
+    }
+
+}
+
